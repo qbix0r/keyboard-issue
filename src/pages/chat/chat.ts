@@ -29,4 +29,8 @@ export class ChatPage {
       type: 'twitter'
     });
   }
+
+  ionViewWillLeave() {
+    NativeKeyboard.hideMessenger();
+  }
 }
